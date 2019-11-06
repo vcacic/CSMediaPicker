@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlbumsTableViewCell" customModule="CSMediaPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="183"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oC9-Bo-3bk">
+                    <rect key="frame" x="20" y="35.5" width="155.5" height="156"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="oC9-Bo-3bk" secondAttribute="height" multiplier="1:1" id="5Oq-Sd-cYd"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRg-eD-hnu">
+                    <rect key="frame" x="185.5" y="35.5" width="177.5" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="8s7-22-a2l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwG-Sd-gZ5">
+                    <rect key="frame" x="185.5" y="166.5" width="177.5" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="A9K-dy-YX5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oC9-Bo-3bk" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.85" id="31W-rt-TWl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vwG-Sd-gZ5" secondAttribute="trailing" constant="20" id="3yb-Nk-xi1"/>
+                <constraint firstItem="XRg-eD-hnu" firstAttribute="top" secondItem="oC9-Bo-3bk" secondAttribute="top" id="IdG-3d-5Xp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XRg-eD-hnu" secondAttribute="trailing" constant="20" id="NHT-1X-fDg"/>
+                <constraint firstItem="XRg-eD-hnu" firstAttribute="leading" secondItem="oC9-Bo-3bk" secondAttribute="trailing" constant="10" id="SRm-sN-WQq"/>
+                <constraint firstItem="oC9-Bo-3bk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="XhP-IC-dMp"/>
+                <constraint firstItem="vwG-Sd-gZ5" firstAttribute="leading" secondItem="oC9-Bo-3bk" secondAttribute="trailing" constant="10" id="ocz-BR-e29"/>
+                <constraint firstItem="vwG-Sd-gZ5" firstAttribute="bottom" secondItem="oC9-Bo-3bk" secondAttribute="bottom" id="q7J-zz-ITY"/>
+                <constraint firstItem="oC9-Bo-3bk" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="vho-d8-vTs"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="albumNameLabel" destination="XRg-eD-hnu" id="ApN-fw-c5F"/>
+                <outlet property="albumsLatestPreviewImage" destination="oC9-Bo-3bk" id="q1F-bp-O5y"/>
+                <outlet property="assetCountLabel" destination="vwG-Sd-gZ5" id="D0V-lA-0BJ"/>
+                <outlet property="countLabelHeight" destination="A9K-dy-YX5" id="dtn-Fd-cwd"/>
+                <outlet property="imageHeight" destination="31W-rt-TWl" id="3PH-0n-oEc"/>
+                <outlet property="nameLabelHeight" destination="8s7-22-a2l" id="yxH-l3-8DW"/>
+            </connections>
+            <point key="canvasLocation" x="115.21739130434783" y="-110.82589285714285"/>
+        </view>
+    </objects>
+</document>
